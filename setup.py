@@ -7,7 +7,7 @@ from os import path
 
 
 setup(
-    name='pack1',
+    name='pack11',
 
     # Versions should comply with PEP440.  For a discussion on single-sourcing
     # the version across setup.py and the project code, see
@@ -87,7 +87,7 @@ setup(
     # pip to create the appropriate form of executable for the target platform.
     entry_points={
         'console_scripts': [
-            'sample=sample:main',
+            'sample=saif:main',
         ],
     },
 )
