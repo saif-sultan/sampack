@@ -5,20 +5,23 @@ from setuptools import setup, find_packages
 from codecs import open
 from os import path
 
+import mypackage
+
+print mypackage
 
 setup(
-    name='pack11',
+    # name='pack11',
 
     # Versions should comply with PEP440.  For a discussion on single-sourcing
     # the version across setup.py and the project code, see
     # https://packaging.python.org/en/latest/single_source_version.html
-    version='0.0.2',
+    # version='0.0.2',
 
-    description='A sample Python project by saif',
-    long_description='here is my long description',
+    # description='A sample Python project by saif',
+    # long_description='here is my long description',
 
     # The project's main homepage.
-    url='https://github.com/pypa/sampleproject',
+    # url='https://github.com/pypa/sampleproject',
 
     # Author details
     author='Saif Sultan',
@@ -48,11 +51,11 @@ setup(
     ],
 
     # What does your project relate to?
-    keywords='sample setuptools development',
+    # keywords='sample setuptools development',
 
     # You can just specify the packages manually here if your project is
     # simple. Or you can use find_packages().
-    packages=find_packages(include=['voodoo']),
+    packages=['mypackage'],      #find_packages(include=['voodoo']),
       #exclude=['contrib', 'docs', 'tests*']),
 
     # List run-time dependencies here.  These will be installed by pip when
@@ -65,11 +68,11 @@ setup(
     # dependencies). You can install these using the following syntax,
     # for example:
     # $ pip install -e .[dev,test]
-    extras_require={
-        'dev': ['check-manifest'],
-        'test': ['coverage'],
-    },
-    install_requires=['APA'],
+    # extras_require={
+    #     'dev': ['check-manifest'],
+    #     'test': ['coverage'],
+    # },
+    install_requires=['APA','numpy','boto','pandas','pika','AIGO'],
     # If there are data files included in your packages that need to be
     # installed, specify them here.  If using Python 2.6 or less, then these
     # have to be included in MANIFEST.in as well.
